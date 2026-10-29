@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Libre+Caslon+Display&family=Libre+Franklin:wght@400;500;600&display=swap');
-
 :root {
   --paper: #f2ecdf;
   --ink: #17201e;
@@ -7,78 +5,77 @@
   --sage: #687970;
   --night: #182320;
   --line: rgba(23, 32, 30, 0.25);
-  --serif: "Libre Caslon Display", Georgia, serif;
-  --sans: "Libre Franklin", Arial, sans-serif;
-  --mono: "DM Mono", monospace;
+  --font: Arial, Helvetica, sans-serif;
 }
 
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--sans); }
+body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--font); }
 a { color: inherit; }
 .skip-link { position: fixed; left: 1rem; top: -5rem; z-index: 10; padding: .8rem 1rem; background: var(--ink); color: white; }
 .skip-link:focus { top: 1rem; }
 
 .masthead { min-height: 88px; display: flex; align-items: center; justify-content: space-between; padding: 0 4vw; border-bottom: 1px solid var(--line); }
 .wordmark { display: flex; gap: .8rem; align-items: center; text-decoration: none; font-weight: 600; font-size: .88rem; letter-spacing: .05em; text-transform: uppercase; }
-.seal { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--ink); border-radius: 50%; font-family: var(--serif); font-size: 1.3rem; }
+.seal { display: grid; place-items: center; width: 34px; height: 34px; border: 1px solid var(--ink); border-radius: 50%; font-size: 1.3rem; }
 nav { display: flex; gap: 2.2rem; }
 nav a { font-size: .76rem; letter-spacing: .09em; text-decoration: none; text-transform: uppercase; }
 nav a:hover, nav a:focus-visible { text-decoration: underline; text-underline-offset: .4rem; }
 
 .hero { min-height: calc(100vh - 88px); display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(310px, .65fr); gap: 7vw; align-items: center; padding: clamp(4rem, 9vw, 9rem) 7vw; }
-.eyebrow, .section-label, .date-card-top, .countdown, footer { font-family: var(--mono); text-transform: uppercase; letter-spacing: .1em; }
+.eyebrow, .section-label, .date-card-top, .countdown, footer { text-transform: uppercase; letter-spacing: .1em; }
 .eyebrow { display: flex; align-items: center; gap: 1rem; color: var(--red); font-size: .72rem; }
 .eyebrow::before { content: ""; width: 3rem; border-top: 1px solid var(--red); }
-h1, h2, blockquote { font-family: var(--serif); font-weight: 400; }
-h1 { max-width: 900px; margin: 1.5rem 0 2rem; font-size: clamp(4rem, 8.4vw, 9rem); line-height: .87; letter-spacing: -.045em; }
-h1 em { color: var(--red); font-style: italic; }
-.dek { max-width: 650px; font-family: var(--serif); font-size: clamp(1.25rem, 2vw, 1.75rem); line-height: 1.45; }
+h1, h2, blockquote { font-weight: 600; }
+h1 { max-width: 900px; margin: 1.5rem 0 2rem; font-size: clamp(2.5rem, 5.3vw, 5.5rem); line-height: 1.1; letter-spacing: -.025em; }
+h1 em { color: var(--red); font-style: normal; }
+.dek { max-width: 650px; font-size: clamp(1.125rem, 1.5vw, 1.25rem); line-height: 1.65; }
 .text-link { display: inline-block; margin-top: 2rem; font-size: .75rem; letter-spacing: .08em; text-transform: uppercase; text-underline-offset: .4rem; }
 .text-link span { margin-left: .5rem; color: var(--red); }
 
 .date-card { background: var(--night); color: var(--paper); padding: 1.4rem; box-shadow: 16px 16px 0 var(--red); transform: rotate(1deg); }
 .date-card-top { display: flex; justify-content: space-between; border-bottom: 1px solid rgba(242,236,223,.3); padding-bottom: 1rem; font-size: .62rem; }
 .date-card time { display: grid; justify-items: center; padding: 2rem 0 2.5rem; }
-.month, .year { font-family: var(--mono); text-transform: uppercase; letter-spacing: .18em; }
+.month, .year { text-transform: uppercase; letter-spacing: .18em; }
 .month { font-size: 1rem; }
-.day { font-family: var(--serif); font-size: clamp(8rem, 15vw, 13rem); line-height: .85; color: #d55b4d; }
+.day { font-size: clamp(7rem, 12vw, 10rem); line-height: 1.1; font-weight: 600; color: #d55b4d; }
 .year { font-size: 1.5rem; }
 .countdown { display: flex; justify-content: space-between; border-top: 1px solid rgba(242,236,223,.3); padding-top: 1rem; font-size: .6rem; }
 .countdown strong { font-weight: 400; font-size: 1rem; }
+.countdown, .day, .year { font-variant-numeric: tabular-nums; }
 
 .rule { display: flex; align-items: center; gap: 1rem; padding: 0 4vw; color: var(--red); }
 .rule span { flex: 1; border-top: 1px solid var(--line); }
-.rule b { font-family: var(--serif); font-size: 1.5rem; }
+.rule b { font-size: 1.5rem; }
 .declaration, .principles { display: grid; grid-template-columns: minmax(130px, .3fr) minmax(0, 1.4fr); gap: 5vw; padding: clamp(6rem, 12vw, 12rem) 7vw; }
 .section-label { font-size: .66rem; }
 .section-label span { display: block; color: var(--red); margin-bottom: 1rem; }
 .section-label p { margin: 0; }
-.declaration h2, .principles h2 { margin: 0 0 2rem; font-size: clamp(3rem, 6vw, 6.2rem); line-height: .95; letter-spacing: -.035em; }
-.lead { max-width: 880px; margin: 0 0 5rem; font-family: var(--serif); font-size: clamp(1.6rem, 3vw, 2.8rem); line-height: 1.3; }
+.declaration h2, .principles h2 { margin: 0 0 2rem; font-size: clamp(2rem, 3.5vw, 3.75rem); line-height: 1.15; letter-spacing: -.02em; }
+.lead { max-width: 880px; margin: 0 0 5rem; font-size: clamp(1.25rem, 2vw, 1.65rem); line-height: 1.6; }
 .columns { columns: 2; column-gap: 4rem; max-width: 900px; }
 .columns p { break-inside: avoid; margin: 0; font-size: .95rem; line-height: 1.8; }
 
 .standard { background: var(--night); color: var(--paper); padding: clamp(6rem, 11vw, 10rem) 7vw; }
 .standard-intro { display: grid; grid-template-columns: minmax(130px, .3fr) minmax(0, 1.4fr); gap: 5vw; }
 .section-label.light span { color: #d55b4d; }
-.standard h2 { margin: 0 0 5rem; font-size: clamp(3rem, 6vw, 6.2rem); line-height: .95; letter-spacing: -.035em; }
+.standard h2 { margin: 0 0 5rem; font-size: clamp(2rem, 3.5vw, 3.75rem); line-height: 1.15; letter-spacing: -.02em; }
 .steps { list-style: none; margin: 0 0 0 calc(20% + 5vw); padding: 0; border-top: 1px solid rgba(242,236,223,.25); }
 .steps li { display: grid; grid-template-columns: 70px 1fr; gap: 2rem; padding: 2rem 0; border-bottom: 1px solid rgba(242,236,223,.25); }
-.step-number { color: #d55b4d; font-family: var(--serif); font-size: 1.5rem; }
-.steps h3 { margin: 0 0 .6rem; font-family: var(--serif); font-size: 2rem; font-weight: 400; }
+.step-number { color: #d55b4d; font-size: 1.5rem; }
+.steps h3 { margin: 0 0 .6rem; font-size: 1.35rem; font-weight: 600; }
 .steps p { max-width: 650px; margin: 0; color: #c9c7bd; line-height: 1.7; }
 
 .principles { padding-bottom: clamp(7rem, 14vw, 14rem); }
 .principle-grid { display: grid; grid-template-columns: 1fr 1fr; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
 .principle-grid article { min-height: 270px; padding: 2rem; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
-.principle-grid span { color: var(--red); font-family: var(--mono); font-size: .65rem; }
-.principle-grid h3 { margin: 3rem 0 1rem; font-family: var(--serif); font-size: 2.3rem; font-weight: 400; }
+.principle-grid span { color: var(--red); font-size: .65rem; }
+.principle-grid h3 { margin: 3rem 0 1rem; font-size: 1.5rem; font-weight: 600; }
 .principle-grid p { max-width: 330px; margin: 0; line-height: 1.6; }
 
 .closing { padding: clamp(7rem, 15vw, 15rem) 7vw; background: var(--red); color: var(--paper); text-align: center; }
-.closing blockquote { margin: 0; font-size: clamp(3.5rem, 7.5vw, 8rem); line-height: .95; letter-spacing: -.035em; }
-.closing p { margin: 3rem 0 0; font-family: var(--mono); font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; }
+.closing blockquote { margin: 0; font-size: clamp(2.25rem, 4.5vw, 4.5rem); line-height: 1.2; letter-spacing: -.02em; }
+.closing p { margin: 3rem 0 0; font-size: .7rem; letter-spacing: .15em; text-transform: uppercase; }
 footer { display: grid; grid-template-columns: 1fr 2fr auto; gap: 2rem; padding: 2rem 4vw; background: #111816; color: var(--paper); font-size: .6rem; }
 footer p { margin: 0; }
 
