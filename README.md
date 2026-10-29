@@ -12,4 +12,16 @@ Open `index.html` directly, or run a local static server:
 python3 -m http.server 8000
 ```
 
-No build step or third-party JavaScript is required.
+No third-party browser JavaScript is required.
+
+## Cloudflare deployment
+
+The site is deployed with Cloudflare Workers Static Assets. GitHub remains the public source repository; deployment credentials stay in Cloudflare.
+
+```sh
+npm ci
+npm run check
+npm run deploy
+```
+
+`npm run build` copies the public files into `dist/`, the only directory Wrangler uploads.

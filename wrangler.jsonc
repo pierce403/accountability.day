@@ -1,0 +1,19 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "accountability-day",
+  "compatibility_date": "2026-10-28",
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "accountability.day",
+      "custom_domain": true
+    }
+  ],
+  "observability": {
+    "enabled": true
+  }
+}
+

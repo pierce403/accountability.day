@@ -82,6 +82,10 @@ h1 em { color: var(--red); font-style: italic; }
 footer { display: grid; grid-template-columns: 1fr 2fr auto; gap: 2rem; padding: 2rem 4vw; background: #111816; color: var(--paper); font-size: .6rem; }
 footer p { margin: 0; }
 
+.not-found { min-height: 100vh; display: grid; align-content: center; padding: 8vw; }
+.not-found h1 { max-width: 950px; }
+.not-found .dek { margin: 0; }
+
 @media (max-width: 800px) {
   nav { display: none; }
   .hero { min-height: auto; grid-template-columns: 1fr; padding: 5rem 7vw 7rem; }
