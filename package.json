@@ -2,7 +2,7 @@
   "name": "accountability-day",
   "version": "1.0.0",
   "private": true,
-  "description": "A recurring civic observance for evidence, due process, and equal justice under law.",
+  "description": "A recurring civic observance for fairness, open government, and public trust.",
   "scripts": {
     "build": "node scripts/build.mjs",
     "check": "node --check script.js && npm run build && WRANGLER_LOG=none wrangler deploy --dry-run",

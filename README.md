@@ -2,7 +2,7 @@
 
 A static site for Accountability Day, observed January 21 following each U.S. presidential inauguration.
 
-The site advocates individual accountability through evidence, independent investigation, due process, and lawful courts. It does not endorse collective punishment, vigilantism, or political retaliation.
+The site welcomes each new chapter with a commitment to fairness, open government, public trust, and individual accountability through evidence and due process.
 
 ## Development
 
