@@ -2,7 +2,7 @@
 
 A static site for Accountability Day, observed January 21 following each U.S. presidential inauguration.
 
-The site welcomes each new chapter with a commitment to fairness, open government, public trust, and individual accountability through evidence and due process.
+The site supports independent review of official conduct, legal action supported by evidence, and due process.
 
 ## Development
 
