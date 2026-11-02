@@ -14,6 +14,10 @@ python3 -m http.server 8000
 
 No third-party browser JavaScript is required.
 
+## Social preview
+
+`opengraph.png` is the 1200 × 630 share card used by the Open Graph and X/Twitter metadata in `index.html`. The editable artwork is `opengraph.svg`. After changing the artwork, export it as a 1200 × 630 PNG and replace `opengraph.png`; the build copies that PNG into `dist/`.
+
 ## Cloudflare deployment
 
 The site is deployed with Cloudflare Workers Static Assets. GitHub remains the public source repository; deployment credentials stay in Cloudflare.

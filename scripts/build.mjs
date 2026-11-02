@@ -8,6 +8,7 @@ const assets = [
   "styles.css",
   "script.js",
   "favicon.svg",
+  "opengraph.png",
   "robots.txt"
 ];
 
