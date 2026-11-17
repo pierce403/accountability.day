@@ -10,6 +10,6 @@
   },
   "devDependencies": {
     "wrangler": "4.155.0"
-  }
+  },
+  "license": "Apache-2.0"
 }
-

@@ -29,3 +29,9 @@ npm run deploy
 ```
 
 `npm run build` copies the public files into `dist/`, the only directory Wrangler uploads.
+
+## License
+
+Original code and documentation in this repository are licensed under the
+[Apache License 2.0](LICENSE). Third-party dependencies, quoted material, and
+other third-party content retain their respective licenses and rights.
